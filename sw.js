@@ -1,22 +1,22 @@
-// sw.js - Service Worker para Anis Nails
+// sw.js - Service Worker para PinkGreenDaya
 
-const CACHE_NAME = 'anisnails-v1';
+const CACHE_NAME = 'pinkgreendaya-v1';
 const urlsToCache = [
-  '/anisnails/',
-  '/anisnails/index.html',
-  '/anisnails/admin.html',
-  '/anisnails/admin-login.html',
-  '/anisnails/setup-wizard.html',
-  '/anisnails/editar-negocio.html',
-  '/anisnails/manifest.json',
-  '/anisnails/icons/icon-72x72.png',
-  '/anisnails/icons/icon-96x96.png',
-  '/anisnails/icons/icon-128x128.png',
-  '/anisnails/icons/icon-144x144.png',
-  '/anisnails/icons/icon-152x152.png',
-  '/anisnails/icons/icon-192x192.png',
-  '/anisnails/icons/icon-384x384.png',
-  '/anisnails/icons/icon-512x512.png'
+  '/pinkgreendaya/',
+  '/pinkgreendaya/index.html',
+  '/pinkgreendaya/admin.html',
+  '/pinkgreendaya/admin-login.html',
+  '/pinkgreendaya/setup-wizard.html',
+  '/pinkgreendaya/editar-negocio.html',
+  '/pinkgreendaya/manifest.json',
+  '/pinkgreendaya/icons/icon-72x72.png',
+  '/pinkgreendaya/icons/icon-96x96.png',
+  '/pinkgreendaya/icons/icon-128x128.png',
+  '/pinkgreendaya/icons/icon-144x144.png',
+  '/pinkgreendaya/icons/icon-152x152.png',
+  '/pinkgreendaya/icons/icon-192x192.png',
+  '/pinkgreendaya/icons/icon-384x384.png',
+  '/pinkgreendaya/icons/icon-512x512.png'
 ];
 
 // ============================================
@@ -108,7 +108,7 @@ self.addEventListener('fetch', event => {
           }
           // Si no hay cache y es imagen, devolver icon por defecto
           if (event.request.url.match(/\.(jpg|jpeg|png|gif|svg|webp)$/)) {
-            return caches.match('/anisnails/icons/icon-192x192.png');
+            return caches.match('/pinkgreendaya/icons/icon-192x192.png');
           }
           return new Response('Error de red', { status: 408 });
         });
@@ -138,6 +138,6 @@ self.addEventListener('message', event => {
   }
 });
 
-console.log('✅ Service Worker configurado para Anis Nails');
+console.log('✅ Service Worker configurado para PinkGreenDaya');
 console.log('📦 Cache:', CACHE_NAME);
 console.log('📄 Archivos a cachear:', urlsToCache.length);

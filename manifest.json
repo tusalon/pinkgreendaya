@@ -1,20 +1,20 @@
 {
-  "name": "Anis Nails",
-  "short_name": "Anis",
+  "name": "PinkGreenDaya",
+  "short_name": "PinkGreenDaya",
   "description": "Uñas y belleza - Tu espacio de cuidado personal",
-  "start_url": "/anisnails/",
-  "scope": "/anisnails/",
+  "start_url": "/pinkgreendaya/",
+  "scope": "/pinkgreendaya/",
   "display": "standalone",
   "background_color": "#ec4899",
   "theme_color": "#ec4899",
   "icons": [
     {
-      "src": "/anisnails/icons/icon-192x192.png",
+      "src": "/pinkgreendaya/icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/anisnails/icons/icon-512x512.png",
+      "src": "/pinkgreendaya/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
