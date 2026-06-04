@@ -1,6 +1,6 @@
 // sw.js - Service Worker para PinkGreenDaya
 
-const CACHE_NAME = 'pinkgreendaya-v49';
+const CACHE_NAME = 'pinkgreendaya-v50';
 const urlsToCache = [
   '/pinkgreendaya/',
   '/pinkgreendaya/index.html',
